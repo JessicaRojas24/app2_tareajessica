@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
+class Persona {
+  String name;
+  String lastName;
+  String cuenta;
 
+  Persona(this.name, this.lastName, this.cuenta);
+}
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: MyHomePage(),
     );
@@ -98,10 +105,3 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-class Persona {
-  String name;
-  String lastName;
-  String cuenta;
-
-  Persona(this.name, this.lastName, this.cuenta);
-}
